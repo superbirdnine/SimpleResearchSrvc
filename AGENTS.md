@@ -15,6 +15,7 @@ Read and follow [`docs/workflow.md`](docs/workflow.md). It is the single authori
 5. Keep the common metadata fields intact, but allow source-specific note bodies.
 6. Never make the portal write to knowledge roots.
 7. Keep examples public-safe and synthetic. Never commit secrets or personal paths.
+8. During installation, offer to help the user configure the portal as a private named Tailscale Serve service, obtain its HTTPS service domain, and verify access. Follow [`docs/deployment.md`](docs/deployment.md); ask before changing shared tailnet ACLs or approval policy.
 
 ## Reusable agent instructions
 

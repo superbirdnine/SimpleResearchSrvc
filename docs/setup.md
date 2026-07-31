@@ -38,6 +38,8 @@ npm start
 
 The portal reads files at request time. Restarting is unnecessary after note edits; refresh the browser.
 
+For private access from other devices, continue with [`deployment.md`](deployment.md) to configure a named Tailscale Serve service and obtain its HTTPS service domain.
+
 ## Intake and retrieval
 
 ```bash

@@ -35,6 +35,8 @@ Open `http://127.0.0.1:4210` by default.
 
 To use existing Markdown roots, copy `.env.example` to `.env.local` and change `FIELDNOTES_RESEARCH_ROOT` and `FIELDNOTES_DISCOVERY_ROOT`. Relative paths resolve from the repository root.
 
+To make the portal available privately on your other devices, follow the [Tailscale deployment guide](docs/deployment.md). It shows Codex, Claude Code, or a human operator how to create a named Tailscale Serve service and obtain its private HTTPS service domain.
+
 ## Intake helper
 
 ```bash
