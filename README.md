@@ -2,7 +2,9 @@
 
 SimpleResearchSrvc creates a local place to store URLs and useful summaries of resources you want to keep. Give **Codex or Claude Code** a link and it can recover the source, summarize it, preserve the original URL and provenance, classify the note, and save it as durable Markdown.
 
-Sources can be social posts, videos, articles, applications, repositories, documentation, or nearly anything else available online. A built-in read-only website lets you browse and search all of your saved research notes in a regular browser.
+Sources can be social posts, videos, articles, applications, repositories, documentation, or nearly anything else available online.
+
+The included read-only website provides a searchable, browser-based library of all your saved research notes.
 
 The service runs locally by default and is intended to be exposed privately at a **Tailscale domain**, so your research library can be reached securely from your other tailnet devices without making the portal public.
 
