@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic source recovery ladder</title>
+  <desc id="desc">Five boxes progress from exact URL to secondary sources.</desc>
+  <rect width="760" height="180" rx="18" fill="#f3f5f2"/>
+  <g font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">
+    <g fill="#dcece4" stroke="#24654b"><rect x="25" y="62" width="125" height="56" rx="10"/><text x="87" y="95" fill="#183d2f">Exact URL</text></g>
+    <g fill="#dcece4" stroke="#24654b"><rect x="171" y="62" width="125" height="56" rx="10"/><text x="233" y="95" fill="#183d2f">Body text</text></g>
+    <g fill="#dcece4" stroke="#24654b"><rect x="317" y="62" width="125" height="56" rx="10"/><text x="379" y="95" fill="#183d2f">Snapshot</text></g>
+    <g fill="#fff3d7" stroke="#8b6720"><rect x="463" y="62" width="125" height="56" rx="10"/><text x="525" y="95" fill="#604512">OCR</text></g>
+    <g fill="#f0e6ee" stroke="#76516c"><rect x="609" y="62" width="125" height="56" rx="10"/><text x="671" y="86" fill="#54384d">Secondary</text><text x="671" y="104" fill="#54384d">source</text></g>
+  </g>
+  <g stroke="#7d8680" stroke-width="2"><path d="M150 90h21"/><path d="M296 90h21"/><path d="M442 90h21"/><path d="M588 90h21"/></g>
+</svg>
