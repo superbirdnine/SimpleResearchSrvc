@@ -8,6 +8,10 @@ The included read-only website provides a searchable, browser-based library of a
 
 The service runs locally by default and is intended to be exposed privately at a **Tailscale domain**, so your research library can be reached securely from your other tailnet devices without making the portal public.
 
+## Portal example
+
+![SimpleResearchSrvc portal showing a searchable research library and an open note](docs/assets/fieldnotes-portal-example.png)
+
 ## What it provides
 
 - one canonical intake/classification workflow shared by both agents
