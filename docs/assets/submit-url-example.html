@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit a URL to SimpleResearchSrvc</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 1200px; height: 330px; overflow: hidden; }
+      body {
+        display: grid;
+        place-items: center;
+        background: #f3f1eb;
+        color: #24231f;
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main { width: 1040px; }
+      .eyebrow {
+        margin: 0 0 14px 4px;
+        color: #6b675f;
+        font-size: 16px;
+        font-weight: 650;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+      .composer {
+        min-height: 150px;
+        padding: 25px 25px 20px;
+        border: 1px solid #d3cec4;
+        border-radius: 22px;
+        background: #fffefa;
+        box-shadow: 0 16px 45px rgba(45, 40, 30, .10);
+      }
+      .prompt {
+        font-size: 23px;
+        line-height: 1.48;
+        letter-spacing: -.012em;
+      }
+      .url { color: #6d4aff; }
+      .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 23px;
+        color: #777168;
+        font-size: 15px;
+      }
+      .agent { display: flex; align-items: center; gap: 9px; }
+      .mark {
+        display: grid;
+        width: 25px;
+        height: 25px;
+        place-items: center;
+        border-radius: 7px;
+        background: #24231f;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 800;
+      }
+      .send {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border-radius: 11px;
+        background: #24231f;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Submit a resource in Codex or Claude Code</p>
+      <div class="composer" role="img" aria-label="Example AI agent prompt for saving a YouTube URL to research">
+        <div class="prompt">Save this URL to research: <span class="url">https://www.youtube.com/watch?v=rcggZqJjoqw</span></div>
+        <div class="controls">
+          <div class="agent"><span class="mark">AI</span><span>Codex or Claude Code</span></div>
+          <span class="send">↑</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

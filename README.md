@@ -8,6 +8,18 @@ The included read-only website provides a searchable, browser-based library of a
 
 The service runs locally by default and is intended to be exposed privately at a **Tailscale domain**, so your research library can be reached securely from your other tailnet devices without making the portal public.
 
+## Save a URL
+
+Open Codex or Claude Code in the installed repository and submit a plain-language request with the URL. The agent will recover the source, create a summary, preserve provenance, and save the note to the appropriate research collection.
+
+![Example Codex or Claude Code prompt: Save this URL to research, followed by a YouTube link](docs/assets/submit-url-example.png)
+
+The request can be as simple as:
+
+```text
+Save this URL to research: https://www.youtube.com/watch?v=rcggZqJjoqw
+```
+
 ## Portal example
 
 ![SimpleResearchSrvc portal showing a searchable research library and an open note](docs/assets/fieldnotes-portal-example.png)
