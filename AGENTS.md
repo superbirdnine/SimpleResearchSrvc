@@ -8,7 +8,7 @@ Read and follow [`docs/workflow.md`](docs/workflow.md). It is the single authori
 
 ## Operating rules
 
-1. Capture every submitted item and assign exactly one classification: `Ignore`, `Watchlist`, or `Promote`.
+1. Capture every submitted item and assign exactly one classification: `Watchlist` or `Promote`. Never discard a user-submitted resource.
 2. Recover browser-visible evidence first. Record direct observation separately from inference.
 3. Run the taxonomy preflight before creating a Research topic.
 4. Route uncertain, partial, or watchlist material to `Discovery/`; route promoted material to `Research/<topic>/`.

@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { knowledgeRoots } from "./roots.mjs";
 
-export const CLASSIFICATIONS = ["Ignore", "Watchlist", "Promote"];
+export const CLASSIFICATIONS = ["Watchlist", "Promote"];
 
 export function slugify(value) {
   return value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 72) || "untitled-source";
@@ -81,8 +81,6 @@ export function captureItem(input, options = {}) {
   if (!CLASSIFICATIONS.includes(item.classification)) throw new Error(`classification must be exactly one of: ${CLASSIFICATIONS.join(", ")}`);
 
   const preflight = taxonomyPreflight({ ...item, roots });
-  if (item.classification === "Ignore") return { classification: item.classification, destination: null, preflight };
-
   let destination;
   if (item.classification === "Watchlist") {
     destination = confined(roots.Discovery, "quick-scans", `${item.captureDate}_${slugify(item.title)}.md`);

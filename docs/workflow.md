@@ -4,7 +4,7 @@ This document is authoritative for Codex, Claude Code, and human operators.
 
 ## 1. Ingest
 
-Treat each submitted URL or source as one captured item. Do not silently drop list entries. One note per source URL is the default.
+Treat each submitted URL or source as one captured item. Every submitted resource must be saved; never discard it as low-signal or irrelevant. One note per source URL is the default.
 
 ## 2. Recover from the source
 
@@ -41,11 +41,10 @@ The intake CLI performs this preflight and reports its matches. The operator rem
 
 | Classification | Use when | Default route |
 | --- | --- | --- |
-| `Ignore` | duplicate, spammy, low-signal, or too weak to preserve | no durable note; optional breadcrumb only when provenance would otherwise be lost |
 | `Watchlist` | promising but incomplete, partially recovered, uncertain, or not yet attached to a Research topic | `Discovery/quick-scans/YYYY-MM-DD_<slug>.md` and `WATCHLIST.md` |
 | `Promote` | evidence is strong enough to become durable topic knowledge now | `Research/<best-existing-topic>/YYYY-MM-DD_<slug>.md` |
 
-Unknown is not Promote by default. `Promote` means write the Research artifact now; it is not a suggestion for a future step.
+When a resource does not justify promotion, classify it as `Watchlist` so the user's reason for submitting it is preserved. `Promote` means write the Research artifact now; it is not a suggestion for a future step.
 
 ## 6. Write the routed artifact
 

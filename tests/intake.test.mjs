@@ -31,12 +31,9 @@ test("classification is exactly one allowed value", (t) => {
   assert.throws(() => captureItem({ ...baseItem, classification: "Unknown" }, { roots }), /exactly one/);
 });
 
-test("Ignore records a decision without writing a durable note", (t) => {
+test("Ignore is rejected so submitted resources cannot be discarded", (t) => {
   const roots = fixture(t);
-  const before = fs.readdirSync(roots.Research, { recursive: true }).length;
-  const result = captureItem({ ...baseItem, classification: "Ignore" }, { roots });
-  assert.equal(result.destination, null);
-  assert.equal(fs.readdirSync(roots.Research, { recursive: true }).length, before);
+  assert.throws(() => captureItem({ ...baseItem, classification: "Ignore" }, { roots }), /exactly one/);
 });
 
 test("Watchlist routes to Discovery and updates the watchlist", (t) => {

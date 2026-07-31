@@ -14,7 +14,7 @@ The service runs locally by default and is intended to be exposed privately at a
 - `Discovery/` for uncertain, partial, and watchlist material
 - `Research/<topic>/` for promoted knowledge
 - browser-first provenance with direct observation separated from inference
-- exactly one classification per item: `Ignore`, `Watchlist`, or `Promote`
+- every submitted resource is saved with exactly one classification: `Watchlist` or `Promote`
 - taxonomy-aware routing before new Research topics are created
 - Fieldnotes portal with collection/topic browsing, full-text search, stable note URLs, Markdown rendering, local assets, and safe external links
 - configurable roots, host, and port
