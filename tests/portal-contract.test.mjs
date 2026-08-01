@@ -22,6 +22,13 @@ test("Markdown links and local assets follow the portal contract", () => {
   assert.match(library, /`\/assets\/\$\{encodeURIComponent\(active\.collection\)\}/);
 });
 
+test("mobile navigation opens routed notes and can return to the library", () => {
+  const library = read("src/components/library.tsx");
+  assert.match(library, /useState\(Boolean\(initialSelectedId\)\)/);
+  assert.match(library, /setReaderOpen\(true\)/);
+  assert.match(library, /className="reader-back" onClick=\{\(\) => setReaderOpen\(false\)\}/);
+});
+
 test("portal exposes no write route", () => {
   const routes = fs.readdirSync(path.join(root, "src/app/api"), { recursive: true }).map(String);
   assert.deepEqual(routes.filter((entry) => /route\.ts$/.test(entry)), [path.join("note", "route.ts")]);
